@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="require" immediate="true" name="es.elv.nwnx2.jvm.crashdetector">
+   <implementation class="es.elv.nwnx2.jvm.crashdetector.impl.CrashDetectorImpl"/>
+   <service>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+   </service>
+</scr:component>

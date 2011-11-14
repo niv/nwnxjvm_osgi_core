@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="NWNXJVM Client Crash Recovery" name="NWNXJVM Client Crash Recovery" id="es.elv.nwnx2.jvm.crashdetector">
+	<AD name="fail_count_reset" id="fail_count_reset" required="true" type="Integer" default="3" />
+	<AD name="login_timeout" id="login_timeout" required="true" type="Integer" default="45" />
+	<AD name="waypoint_tag" id="waypoint_tag" required="true" type="String" default="" />
+	<AD name="message" id="message" required="true" type="String"
+		default="TThe Client Crash Detector And Recovery Gnomes think you are experiencing technical difficulties and have thusly transported you back to the starting location. Have a pleasant time." />
+  </OCD>
+
+    <Designate pid="es.elv.nwnx2.jvm.crashdetector">
+        <Object ocdref="es.elv.nwnx2.jvm.crashdetector"/>
+    </Designate>
+
+</metatype:MetaData>
