@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="require" immediate="true" name="es.elv.nwnx2.jvm.hierarchy.applycache">
+   <implementation class="es.elv.nwnx2.jvm.hierarchy.applycache.activator.ApplyCacheServiceImpl"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService" name="HierarchyService" policy="static"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.hierarchy.applycache.ApplyCacheService"/>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+      <provide interface="es.elv.nwnx2.jvm.hierarchy.ExceptionListener"/>
+   </service>
+</scr:component>

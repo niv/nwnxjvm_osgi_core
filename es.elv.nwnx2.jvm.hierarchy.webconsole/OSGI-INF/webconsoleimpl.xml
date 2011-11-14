@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="optional" immediate="true" name="es.elv.nwnx2.jvm.hierarchy.webconsole">
+   <implementation class="es.elv.nwnx2.jvm.hierarchy.webconsole.activator.Impl"/>
+   <service>
+      <provide interface="javax.servlet.Servlet"/>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+   </service>
+   <property name="felix.webconsole.label" type="String" value="hierarchy_stats"/>
+   <property name="felix.webconsole.title" type="String" value="Hierarchy Statistics"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService" name="HierarchyService" policy="static"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.hierarchy.applycache.ApplyCacheService" name="ApplyCacheService" policy="static"/>
+</scr:component>

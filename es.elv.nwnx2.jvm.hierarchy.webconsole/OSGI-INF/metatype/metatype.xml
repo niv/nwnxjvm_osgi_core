@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="Hierarchy webconsole addon" name="NWNXJVM Hierarchy webconsole" id="es.elv.nwnx2.jvm.hierarchy.webconsole">
+    <AD name="smoothing_alpha" id="smoothing_alpha" required="true" type="Float" default="0.0125" />
+  </OCD>
+
+    <Designate pid="es.elv.nwnx2.jvm.hierarchy.webconsole">
+        <Object ocdref="es.elv.nwnx2.jvm.hierarchy.webconsole"/>
+    </Designate>
+
+</metatype:MetaData>

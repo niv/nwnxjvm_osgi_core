@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NWNXJVM NWNX Core Support
+Bundle-SymbolicName: es.elv.nwnx2.jvm.nwnx
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.nwnx.nwnx2.jvm,
+ org.nwnx.nwnx2.jvm.constants,
+ org.osgi.framework;version="1.5.0"
+Export-Package: es.elv.nwnx2.jvm.nwnxcore

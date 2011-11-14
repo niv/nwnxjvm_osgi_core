@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="es.elv.nwnx2.jvm.nwnx.chat.events">
+   <implementation class="es.elv.nwnx2.jvm.nwnx.chat.impl.GameEventProviderImpl"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.hierarchy.events.EventResolverService"/>
+   </service>
+</scr:component>

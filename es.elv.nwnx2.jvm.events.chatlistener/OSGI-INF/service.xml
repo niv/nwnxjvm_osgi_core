@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="es.elv.nwnx2.jvm.events.chatlistener">
+   <implementation class="es.elv.nwnx2.jvm.events.chatlistener.impl.GameEventProviderImpl"/>
+   <reference cardinality="1..1" interface="es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService" name="HierarchyService" policy="static"/>
+</scr:component>

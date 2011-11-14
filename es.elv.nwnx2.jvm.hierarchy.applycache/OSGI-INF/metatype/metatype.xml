@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="Object Hierarchy ApplyCache keeps around references to NWObjects between events to prevent GC from collecting them prematurely and provoking cache misses"
+  		name="NWNXJVM Object Hierarchy ApplyCache" id="es.elv.nwnx2.jvm.hierarchy.applycache">
+
+    <AD name="Object Cache Size" id="cache_size" required="true" type="Integer" default="1000" />
+  </OCD>
+
+    <Designate pid="es.elv.nwnx2.jvm.hierarchy.applycache">
+        <Object ocdref="es.elv.nwnx2.jvm.hierarchy.applycache"/>
+    </Designate>
+
+</metatype:MetaData>

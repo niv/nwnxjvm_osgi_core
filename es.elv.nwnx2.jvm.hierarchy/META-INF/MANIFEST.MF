@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NWNXJVM ObjectHierarchy
+Bundle-SymbolicName: es.elv.nwnx2.jvm.hierarchy
+Bundle-Version: 1.0.0.qualifier
+Export-Package: es.elv.nwnx2.jvm.hierarchy;uses:="org.nwnx.nwnx2.jvm",
+ es.elv.nwnx2.jvm.hierarchy.bundles,
+ es.elv.nwnx2.jvm.hierarchy.events
+Import-Package: org.nwnx.nwnx2.jvm,
+ org.nwnx.nwnx2.jvm.constants,
+ org.osgi.framework,
+ org.osgi.service.cm;version="1.2.1",
+ org.osgi.service.component;version="1.1.0",
+ org.osgi.service.event
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/hierarchy.xml, OSGI-INF/objecthandler.xml, OSGI-INF/effecthandler.xml, OSGI-INF/itempropertyhandler.xml
+Require-Bundle: es.elv.osgi.base;bundle-version="1.0.0";visibility:=reexport

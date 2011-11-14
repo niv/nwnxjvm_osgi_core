@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NWNXJVM Hierarchy Core EventResolver
+Bundle-SymbolicName: es.elv.nwnx2.jvm.events.game
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: es.elv.nwnx2.jvm.hierarchy;bundle-version="1.0.0"
+Import-Package: org.nwnx.nwnx2.jvm,
+ org.nwnx.nwnx2.jvm.constants,
+ org.osgi.framework,
+ org.osgi.service.component;version="1.1.0"
+Service-Component: OSGI-INF/component.xml
+Export-Package: es.elv.nwnx2.jvm.events.game

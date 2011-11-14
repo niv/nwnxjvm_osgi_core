@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="Object Hierarchy" name="NWNXJVM Object Hierarchy" id="es.elv.nwnx2.jvm.hierarchy">
+	<AD name="exception dump directory" id="exception_dump_directory"
+	required="true" type="String" default="" />
+  </OCD>
+
+    <Designate pid="es.elv.nwnx2.jvm.hierarchy">
+        <Object ocdref="es.elv.nwnx2.jvm.hierarchy"/>
+    </Designate>
+
+</metatype:MetaData>

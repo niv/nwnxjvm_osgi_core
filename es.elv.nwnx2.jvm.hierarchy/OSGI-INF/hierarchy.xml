@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" configuration-policy="optional" immediate="true" name="es.elv.nwnx2.jvm.hierarchy">
+   <implementation class="es.elv.nwnx2.jvm.hierarchy.activator.HierarchyServiceImpl"/>
+   <service>
+      <provide interface="es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService"/>
+      <provide interface="org.osgi.service.cm.ManagedService"/>
+   </service>
+   <reference cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="static"/>
+   <reference cardinality="0..n" interface="es.elv.nwnx2.jvm.hierarchy.events.EventListener" name="EventListener" policy="dynamic"/>
+   <reference cardinality="0..n" interface="es.elv.nwnx2.jvm.hierarchy.events.EventResolverService" name="EventResolverService" policy="dynamic"/>
+   <reference cardinality="0..n" interface="es.elv.nwnx2.jvm.hierarchy.ExceptionListener" name="ExceptionListener" policy="dynamic"/>
+</scr:component>
