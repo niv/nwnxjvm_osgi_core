@@ -19,7 +19,7 @@ import es.elv.osgi.base.SCRHelper;
 
 public abstract class Feature extends SCRHelper implements EventListener {
 	private Set<ScheduledEvery> scheds = new HashSet<ScheduledEvery>();
-	private ServiceRegistration el;
+	private ServiceRegistration<?> el;
 
     @Override
     protected void activate(ComponentContext ctxt) throws Exception {

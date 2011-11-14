@@ -150,13 +150,13 @@ public class HierarchyServiceImpl extends Feature implements ManagedService, Hie
 				System.err.println("Cannot get EventAdmin service, cannot publish event.");
 			}
 
-			int resolvedEventCount = 0;
+			// int resolvedEventCount = 0;
 			for (EventResolverService r : locateServicesFor(EventResolverService.class)) {
 				try {
 
 					List<GameEvent<? extends GameObject>> resolvedEvents =
 						r.resolve((GameObject) objSelf, event);
-					resolvedEventCount += resolvedEvents.size();
+					// resolvedEventCount += resolvedEvents.size();
 
 					for (GameEvent<? extends GameObject> v : resolvedEvents)
 						try {
@@ -187,9 +187,8 @@ public class HierarchyServiceImpl extends Feature implements ManagedService, Hie
 		}
 	};
 
-	@SuppressWarnings("unchecked")
 	@Override
-	public void updated(Dictionary c) throws ConfigurationException {
+	public void updated(@SuppressWarnings("rawtypes") Dictionary c) throws ConfigurationException {
 		if (c == null)
 			return;
 

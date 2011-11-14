@@ -180,12 +180,12 @@ public class Creature extends GameObject {
 	}
 
 	public boolean hears(GameObject other) {
-		return other.getLocation().area().equals(this.getLocation().area()) &&
+		return other.getLocation().getArea().equals(this.getLocation().getArea()) &&
 			NWScript.getObjectHeard(other, this);
 	}
 
 	public boolean sees(GameObject other) {
-		return other.getLocation().area().equals(this.getLocation().area()) &&
+		return other.getLocation().getArea().equals(this.getLocation().getArea()) &&
 			NWScript.getObjectSeen(other, this);
 	}
 }

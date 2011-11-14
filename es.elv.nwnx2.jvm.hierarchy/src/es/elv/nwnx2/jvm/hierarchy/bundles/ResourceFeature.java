@@ -16,7 +16,7 @@ public class ResourceFeature extends Feature implements ObjectClassService {
 
 	private Set<ObjectHandler> handlers = new HashSet<ObjectHandler>();
 
-	private ServiceRegistration ocs;
+	private ServiceRegistration<?> ocs;
 
 	@Override
 	protected void activate(ComponentContext ctxt) throws Exception {

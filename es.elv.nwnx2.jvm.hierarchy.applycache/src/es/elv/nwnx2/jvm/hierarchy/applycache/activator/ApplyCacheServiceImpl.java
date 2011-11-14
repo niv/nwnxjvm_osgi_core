@@ -24,7 +24,6 @@ import es.elv.nwnx2.jvm.hierarchy.applycache.CachedObjectInvalidated;
 import es.elv.nwnx2.jvm.hierarchy.applycache.EventLog;
 import es.elv.nwnx2.jvm.hierarchy.bundles.Feature;
 import es.elv.nwnx2.jvm.hierarchy.bundles.HierarchyService;
-import es.elv.nwnx2.jvm.hierarchy.events.GameEvent;
 import es.elv.nwnx2.jvm.hierarchy.events.Handler;
 
 public class ApplyCacheServiceImpl extends Feature implements ApplyCacheService, ManagedService, ExceptionListener {
@@ -167,8 +166,7 @@ public class ApplyCacheServiceImpl extends Feature implements ApplyCacheService,
 		cacheSize = newSize;
 	}
 	@Override
-	@SuppressWarnings("unchecked")
-	public void updated(Dictionary c) throws ConfigurationException {
+	public void updated(@SuppressWarnings("rawtypes") Dictionary c) throws ConfigurationException {
 		if (c == null)
 			return;
 

@@ -46,9 +46,8 @@ public class Impl extends Feature implements Servlet, ApplyListener, ManagedServ
 	private long ctxLastSec = -1;
 
 
-	@SuppressWarnings("unchecked")
 	@Override
-	public void updated(Dictionary c) throws ConfigurationException {
+	public void updated(@SuppressWarnings("rawtypes") Dictionary c) throws ConfigurationException {
 		if (null == c)
 			return;
 
